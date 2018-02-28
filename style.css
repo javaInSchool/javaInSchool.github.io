@@ -262,6 +262,24 @@ header::after{
 	float: left;
 	font-size: 18px;
 }
+.main-box-catalog{
+	font-size: 24px;
+	margin: 20px 0px;
+}
+
+.box {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  	align-items: center;
+}
+.box div {
+  	width: 250px;
+  	min-height: 100px;
+  	margin-bottom: 50px;
+  	border: 2px solid #00979d; 
+}
+
 
 footer{
 	padding: 20px 75px 20px 75px;
