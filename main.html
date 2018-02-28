@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>blocks</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<a name="top"></a>
+</head>
+<body>
+	<nav>
+		<div class="top-left">
+			<select name="currency">
+          		<option value="hryvny">Гривня</option>
+          		<option value="dollar">Доллар</option>
+        	</select>
+        	<select name="language">
+          		<option value="uk">Українська</option>
+          		<option value="ru">Русский</option>
+          		<option value="en">English</option>
+        	</select>		
+		</div>
+		<div class="common-menu">
+			<ul>
+				<li><a href="">+38-O44-123-45-67</a></li>
+				<li><a href="">Особистий кабінет</a>
+					<ul>
+						<li><a href="">Реєстрація</a></li>
+						<li><a href="">Авторизація</a></li>
+					</ul>
+				</li>
+				<li><a href="">Закладки</a></li>
+				<li><a href="">Корзина</a></li>
+				<li><a href="">Оформити замовлення</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<header>
+		<div class="logo">
+			<img src="arduino_logo.png">
+		</div>
+		<div class="cart">
+			<button type="button" class="cart-button" aria-expanded="false" onclick="var date = new Date();alert('Thank you for your purchase #'+(date.getYear()-100)+date.getMonth()+date.getDay()+'! Your order was placed and moved on!');">
+				<span class="cart-content">Кошик</span>
+			</button>
+		</div>
+		<div class="search-container">
+			<div class="search-input">
+				<input type="text" name="search" value="" placeholder="Пошук товару з каталогу">
+			</div>
+  			<div class="search-button">
+  				<button type="button" aria-expanded="false" onclick="alert('Sorry, developer does not know how to do parsing or database order ;)');">
+  					<span class="search-button-content">Шукати</span>
+  				</button>
+  			</div>
+		</div>
+	</header>
+
+	<section>
+		<nav class="menu">
+			<div class="common-menu">
+				<ul>
+					<li><a href="">Arduino набори</a></li>
+					<li><a href="">Плати та модулі</a></li>
+					<li><a href="">Сенсори</a></li>
+					<li><a href="">Радіодеталі</a></li>
+					<li><a href="">Макетки</a></li>
+					<li><a href="">Книги</a></li>
+					<li><a href="">Гурток</a></li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+	<section>
+		<div class="pic-container">
+			<img src="robot-main.png">
+		</div>
+		<div class="text-box">
+			<span class="huge-42-size-text">Create your own device! *</span>
+			<span class="normal-18-size-text">*Створи свій власний девайс!</span>
+		</div>
+	</section>
+
+	<section>
+		
+	</section>
+
+
+	<footer>
+		<div class="links">
+			<ul>
+				<li><a href="">Карта проїзду</a></li>
+				<li><a href="">Доставка</a></li>
+				<li><a href="">Оплата</a></li>
+				<li><a href="">Контакти</a></li>
+				<li><a href="">Про нас</a></li>
+			</ul>
+		</div>
+		<div class="newsletter-form">
+			<h3>Новини</h3>
+			<input type="text" name="news" value="" placeholder="Введіть електронну адресу для підписки на новини">
+			<button class="subscribe-button">Підписатись</button>
+		</div>
+		<div class="back"><a href="#top"><img src="up.jpg"></a></div>
+		<div class="social-links">
+			
+		  <ul>
+		    <li>
+		      <a href="https://www.facebook.com/official.arduino" target="_blank" id="facebook" class="facebook" rel="noopener">
+		        <img src="https://content.arduino.cc/website/social_icons/icon-facebook.svg" alt="facebook">
+		        <p class="follow-us">follow us on Facebook</p>
+		      </a>
+		    </li>
+		    <li>
+		      <a href="https://twitter.com/arduino" target="_blank" id="twitter" class="twitter" rel="noopener">
+		        <img src="https://content.arduino.cc/website/social_icons/icon-twitter.svg" alt="twitter">
+		        <p class="follow-us">follow us on Twitter</p>
+		      </a>
+		    </li>
+		    <li>
+		      <a href="https://plus.google.com/+Arduino" target="_blank" id="gplus" class="gplus" rel="noopener">
+		        <img src="https://content.arduino.cc/website/social_icons/icon-gplus.svg" alt="google plus">
+		        <p class="follow-us">follow us on Google+</p>
+		      </a>
+		    </li>
+		    <li>
+		      <a href="https://www.instagram.com/arduino.cc/" target="_blank" id="instagram" class="instagram" rel="noopener">
+		        <img src="https://content.arduino.cc/website/social_icons/icon-instagram.svg" alt="instagram">
+		        <p class="follow-us">follow us on Instagram</p>
+		      </a>
+		    </li>
+		    <li>
+		      <a href="https://github.com/arduino/" target="_blank" id="github" class="github" rel="noopener">
+		        <img src="https://content.arduino.cc/website/social_icons/icon-github.svg" alt="github">
+		        <p class="follow-us">Arduino on GitHub</p>
+		      </a>
+		    </li>
+		    <li>
+		      <a href="https://www.flickr.com/photos/arduino_cc" target="_blank" id="flickr" class="flickr" rel="noopener">
+		        <img src="https://content.arduino.cc/website/social_icons/icon-flickr.svg" alt="flickr">
+		        <p class="follow-us">follow us on Flickr</p>
+		      </a>
+		    </li>
+		    <li>
+		      <a href="https://www.youtube.com/user/arduinoteam" target="_blank" id="youtube" class="youtube" rel="noopener">
+		        <img src="https://content.arduino.cc/website/social_icons/icon-youtube.svg" alt="youtube">
+		        <p class="follow-us">follow us on YouTube</p>
+		      </a>
+		    </li>
+		  </ul>
+
+		</div>
+	</footer>
+
+</body>
+</html>

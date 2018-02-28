@@ -1,0 +1,394 @@
+﻿body,html,div{
+	margin: 0;
+	padding: 0;
+	font-family: Verdana,sans-serif;
+}
+
+section{
+	padding: 0px;
+	margin: 0px 75px;
+	/*border:1px solid black;*/
+}
+section::after{
+	content: "";
+    display: block;
+    clear: both;
+}
+
+nav {
+    background-color: #00979d;
+    border-bottom: 1px solid #000000;
+    padding: 0px 75px 0px 75px;
+    margin: 0px 0px 10px 0px;
+    min-height: 50px;
+    font-family: Verdana,sans-serif;
+	font-size: 16px;
+}
+nav::after{
+	content: "";
+    display: block;
+    clear: both;
+}
+.menu{
+	border:none;
+	border-radius: 5px;
+	padding-left: 25px;
+}
+
+nav .top-left{
+	float: left;
+	margin-right: 170px;
+	/*border: 1px solid black;*/
+}
+nav .top-left select{
+	float: left;
+	height:50px;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	color:white;
+	background-color:#00979d; 
+	font-family: Verdana,sans-serif;
+	font-size: 16px;
+}
+nav .top-left select:hover{
+	background-color:#7fcbcd;
+	color:black;
+}
+
+.common-menu{
+	height: 50px;
+	float: left;
+}
+	
+.common-menu ul {
+	padding: 0 10px;
+	margin: 0px;
+	/*margin-top: 5px;*/
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+.common-menu ul:after {
+	clear: both; display: block;
+}
+	
+.common-menu ul li {
+	float: left;
+	margin: 0px 10px;
+}
+
+.common-menu ul li:hover {
+	background: #7fcbcd;
+}
+
+.common-menu ul li:hover ul {
+	display: block;
+	color:black;
+}
+
+.common-menu ul li a {
+	display: block;
+	box-sizing: border-box;
+    height: 50px;
+    padding: 15px 5px;
+    color: white;
+    text-decoration: none;
+}
+.common-menu ul li:hover a {
+	color: black;
+}
+
+.common-menu ul ul {
+	display: none;
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+}
+	
+.common-menu ul ul li {
+	float: none; 
+	color:black;
+	margin: 0px; 
+	position: relative;
+}
+	
+.common-menu ul ul li a {
+	padding: 5px 10px;
+	color:black;
+	box-sizing: border-box;
+    height: 30px;
+}	
+.common-menu ul li:hover ul li a{
+	background-color: #7fcbcd;
+}
+.common-menu ul li:hover ul li a:hover {
+	background-color: white;
+}
+
+header {
+    padding: 0px 75px 0px 75px;
+    margin: 0px 0px 10px 0px;
+    min-height: 100px;
+}
+header .logo{
+	float: left;
+	box-sizing: border-box;
+	width: 200px;
+}
+header .logo img{
+	width: 100%;
+}
+header .search-container{
+	float: right;
+    width: 500px;
+    max-height: 52px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+header .search-container .search-input{
+	float: left;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    width: 70%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+header .search-container .search-input input{
+	height: 30px;
+    border: 0px solid black;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    width: 100%;
+    font-family: Verdana,sans-serif;
+    /* border-bottom: 2px solid red; */
+}
+header .search-container .search-input textarea:focus, input:focus{
+    outline: none;
+}
+header .search-container .search-button{
+	float: right;
+    background-color: lightgrey;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 2px solid black;
+    width: 30%;
+    max-height: 50px;
+    box-sizing: border-box;
+}
+header .search-container .search-button button{
+	width:100%;
+	height: 50px;
+	padding: 0px;
+	margin: 0px;
+	border:none;
+	padding-left: 45px;
+	border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: url('search.png');
+    background-size: 30px 30px;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+header .search-container .search-button button:focus{
+	outline: none;
+}
+header .search-container .search-button button span{
+	font-family: Verdana,sans-serif;
+	font-size: 16px;
+}
+header .cart{
+	float: right;
+	width: 200px;
+	min-height: 50px;
+	margin-top: 20px;
+    box-sizing: border-box;
+    margin-left: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+header .cart .cart-button{
+	width:100%;
+	min-height: 50px;
+	padding: 0px;
+	margin: 0px;
+	border:none;
+	border-radius: 10px; 
+}
+header .cart .cart-button:hover{
+    cursor: pointer;
+}
+header .cart .cart-button:focus{
+    outline: none;
+}
+header .cart .cart-button .cart-content{
+	font-family: Verdana,sans-serif;
+	font-size: 16px;
+}
+header::after{
+	content: "";
+    display: block;
+    clear: both;
+}
+
+.pic-container{
+	float:left;
+	width: 45%;
+}
+.pic-container img{
+	width: 100%;
+}
+.text-box{
+	float: left;
+	width:45%;
+	font-family: serif, Verdana, sans-serif;
+	padding-left: 50px;
+	padding-top: 100px;
+}
+.text-box .huge-42-size-text{
+	float: left;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 42px;
+}
+.text-box .normal-18-size-text{
+	float: left;
+	font-size: 18px;
+}
+
+footer{
+	padding: 20px 75px 20px 75px;
+    margin: 20px 0px 0px 0px;
+    min-height: 100px;
+    background-color: #00979d;
+    border-top: 1px solid black;
+}
+
+footer .links{
+	float: left;
+	margin-bottom: 15px;
+}
+footer .links ul{
+	padding: 0 10px;
+	margin: 0px;
+	list-style: none;
+	position: relative;
+}
+footer .links ul li{
+	padding: 3px 0px;
+	margin: 0px;
+}
+footer .links ul li a {
+    color: white;
+    text-decoration: none;
+}
+footer .links ul li:hover a {
+	color: black;
+}
+
+footer .newsletter-form{
+	float: left;
+	width: 60%;
+	min-height: 100px;
+	margin-left: 25px;
+	padding-left: 25px; 
+	text-transform: uppercase;
+}
+footer .newsletter-form h3{
+	color: white;
+	margin-top:3px;
+	margin-bottom: 10px;
+}
+footer .newsletter-form input{
+	float: left;
+	display: block;
+	height: 47px;
+    background-color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    font-family: serif, Verdana,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0px 14px;
+    width: 70%;
+}
+footer .newsletter-form .subscribe-button{
+  float: left;
+  display: inline-block;
+  padding: 13px 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #008184;
+  border: none;
+  box-shadow: 0 6px #005C5F;
+}
+
+footer .newsletter-form .subscribe-button:hover {
+	box-shadow: 0 3px #005C5F;
+  	transform: translateY(3px);
+}
+
+footer .newsletter-form .subscribe-button:active {
+  box-shadow: 0 0px #005C5F;
+  transform: translateY(6px);
+}
+
+.back{
+	float:right;
+	width: 60px;
+	height: 60px;
+}
+.back a{
+	display: block;
+}
+.back a img{
+	width:100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.social-links{
+	float:right;
+	height: 30px;
+	width: 300px;
+}
+.social-links ul{
+	padding: 0 10px;
+	margin: 0px;
+	list-style: none;
+	position: relative;
+}
+footer .links ul li{
+	padding: 3px 0px;
+	margin: 0px;
+}
+footer .links ul li a {
+    color: white;
+    text-decoration: none;
+}
+footer .links ul li:hover a {
+	color: black;
+}
+
+footer::after{
+	content: "\00a9  2018 Horbach";
+	font-size: 12px;
+	width: 50%;
+	color: white;
+	padding-left: 10px;
+    display: block;
+    clear: both;
+}
