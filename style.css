@@ -366,21 +366,46 @@ footer .newsletter-form .subscribe-button:active {
 	width: 300px;
 }
 .social-links ul{
-	padding: 0 10px;
-	margin: 0px;
+	float: right;
+	display: inline-block;
 	list-style: none;
 	position: relative;
-}
-footer .links ul li{
-	padding: 3px 0px;
+	padding: 0 10px;
 	margin: 0px;
 }
-footer .links ul li a {
+.social-links ul li{
+	float: left;
+	padding: 0px 5px;
+	margin: 0px;
+}
+.social-links ul li a {
+	display: block;
+	width: 30px;
+	height: 30px;
     color: white;
     text-decoration: none;
 }
-footer .links ul li:hover a {
+.social-links ul li:hover a {
 	color: black;
+}
+.social-links ul li a p {
+	display: none;
+}
+.social-links ul li a:hover p {
+	display: initial;
+}
+.social-links ul li a img{
+	width: 100%;
+}
+.follow-us{
+	width: 250px;
+	height: 20px;
+	float: right;
+}
+.follow-us p{
+	margin: 0px;
+	margin-left: 90px;
+	padding: 0px;
 }
 
 footer::after{
