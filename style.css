@@ -159,14 +159,14 @@ header .search-container .search-input{
     box-sizing: border-box;
 }
 header .search-container .search-input input{
-	height: 30px;
+	height: 30px; 
     border: 0px solid black;
     padding: 0px;
-    padding-top: 10px;
+    padding-top: 10px; 
     padding-bottom: 10px;
     margin: 0px;
     width: 100%;
-    font-family: Verdana,sans-serif;
+    font-family: Verdana,sans-serif !important;
     /* border-bottom: 2px solid red; */
 }
 header .search-container .search-input textarea:focus, input:focus{
@@ -252,7 +252,13 @@ header::after{
 	padding-left: 50px;
 	padding-top: 100px;
 }
-.text-box .huge-42-size-text{
+.text-box-form{
+	float: left;
+	width:40%;
+	font-family: serif, Verdana, sans-serif;
+}
+.huge-42-size-text{
+	width: 100%;
 	float: left;
 	font-style: italic;
 	font-weight: bold;
@@ -267,17 +273,89 @@ header::after{
 	margin: 20px 0px;
 }
 
+
+
 .box {
   	display: flex;
   	flex-wrap: wrap;
   	justify-content: space-between;
   	align-items: center;
 }
-.box div {
+.box .productItems {
   	width: 250px;
   	min-height: 100px;
   	margin-bottom: 50px;
-  	border: 2px solid #00979d; 
+  	border: 2px solid #005c5f; 
+}
+.box .productItems .productImage{
+	width: 250px;
+	min-height: 100px;
+}
+.box .productItems .productImage img{
+	width: 100%;
+}
+.box .productItems .productDescription{
+	width: 230px;
+	min-height: 100px;
+	margin: 0px 10px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+.box .productItems .productDescription h4{
+	display: block;
+	margin: 10px 0px;
+}
+.box .productItems .productDescription .productPrice{
+	display: block;
+	margin-bottom: 10px;
+}
+.box .productItems .productDescription .productPrice .price{
+	color:red;
+	font-weight: bold;
+	font-size: 18px;	
+}
+.box .productItems .productButtonGroup{
+	width: 100%;
+	height: 40px;
+}
+.box .productItems .productButtonGroup button{
+	width: 50%;
+	height: 40px;
+	margin: 0px;
+	padding: 0 5px;
+}
+.box .productItems .productButtonGroup .toCart{
+	float: left;
+	width: 50%;
+	height: 40px;
+	background-color: #008184;
+	border: none;
+    border-top: 2px solid #005c5f;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px;
+    cursor: pointer;
+}
+.box .productItems .productButtonGroup button{
+	float: left;
+	width: 25%;
+	height: 40px;
+	background-color: #008184;
+    border: none;
+    border-top: 2px solid #005c5f;
+    border-left: 2px solid #005c5f;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px;
+    cursor: pointer;
 }
 
 
@@ -434,4 +512,16 @@ footer::after{
 	padding-left: 10px;
     display: block;
     clear: both;
+}
+
+.blog-post-text{
+	float: left;
+	width: 400px;
+	height: 100px;
+	border: 1px solid black;
+}
+.blog-post{
+	width: 100%;
+	height: 200px;
+	border: 1px solid black;
 }

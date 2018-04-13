@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>blocks</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<a name="top"></a>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="https://api.backendless.com/sdk/js/latest/backendless.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="top-left">
+			<select name="currency">
+          		<option value="hryvny">Гривня</option>
+          		<option value="dollar">Доллар</option>
+        	</select>
+        	<select name="language">
+          		<option value="uk">Українська</option>
+          		<option value="ru">Русский</option>
+          		<option value="en">English</option>
+        	</select>		
+		</div>
+		<div class="common-menu">
+			<ul>
+				<li><a href="">+38-O44-123-45-67</a></li>
+				<li><a href="">Особистий кабінет</a>
+					<ul>
+						<li><a href="">Реєстрація</a></li>
+						<li><a href="">Авторизація</a></li>
+					</ul>
+				</li>
+				<li><a href="">Закладки</a></li>
+				<li><a href="">Корзина</a></li>
+				<li><a href="">Оформити замовлення</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--################################################
+	############# HEADER  ##############################
+	############# and     ##############################
+	############# Buttons ##############################
+	#################################################### 
+	 -->
+	<header>
+		<div class="logo">
+			<img src="arduino_logo.png">
+		</div>
+		<div class="cart">
+			<button type="button" class="cart-button" aria-expanded="false" onclick="var date = new Date();alert('Thank you for your purchase #'+(date.getYear()-100)+'_'+(date.getMonth()+1)+'_'+date.getDate()+'! Your order was placed and moved on!');">
+				<span class="cart-content">Кошик</span>
+			</button>
+		</div>
+		<div class="search-container">
+			<div class="search-input">
+				<input type="text" name="search" value="" placeholder="Пошук товару з каталогу">
+			</div>
+  			<div class="search-button">
+  				<button type="button" aria-expanded="false" onclick="alert('Sorry, developer does not know how to do parsing or database order ;)');">
+  					<span class="search-button-content">Шукати</span>
+  				</button>
+  			</div>
+		</div>
+	</header>
+
+	<!--################################################
+	############# MENU  ################################
+	#################################################### 
+	 -->
+
+	<section>
+		<nav class="menu">
+			<div class="common-menu">
+				<ul>
+					<li><a href="main.html">Home</a></li>
+					<li><a href="">Arduino набори</a></li>
+					<li><a href="">Плати та модулі</a></li>
+					<li><a href="">Сенсори</a></li>
+					<li><a href="">Радіодеталі</a></li>
+					<li><a href="">Макетки</a></li>
+					<li><a href="">Книги</a></li>
+					<li><a href="">Гурток</a></li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+	<section>
+		<span class="huge-42-size-text">Заповніть, будь-ласка, анкету.</span>
+		<div class="text-box-form">
+			<form role="form" id="form" method="post">
+				<div class="form-group">
+					<label for="userLangInput">Оберіть зручну мову:</label>
+					<select name="language">
+	          			<option value="uk">Українська</option>
+	          			<option value="ru">Русский</option>
+	          			<option value="en">English</option>
+	          		</select>
+	          	</div>
+
+	          	<div class="form-group">
+	          		<label for="userNameInput">Ім'я:</label>
+	          		<input id="userNameInput" name="name" type="text" class="form-control">
+	          	</div>
+
+	          	<div class="form-group">
+	          		<label for="userSurnameInput">Прізвище:</label>
+	          		<input id="userSurnameInput" name="surname" type="text" class="form-control">
+	          	</div>
+
+	          	<div class="form-group">
+	          		<label for="userAgeInput">Вік:</label>
+	          		<input id="userAgeInput" name="age" type="text" class="form-control">
+	          	</div>
+
+	          	<div class="form-group">
+	          		<label for="userCourseInput">Гурток:</label>
+	          		<input id="userCourseInput" name="party" type="text" class="form-control">
+	          	</div>
+
+	          	<div class="form-group">
+	          		<label for="userEmailInput">Email:</label>
+	          		<input id="userEmailInput" name="email" type="text" class="form-control">
+	          	</div>
+
+	          	<div class="form-group">
+	          		<label for="userPasswordInput">Пароль:</label>
+	          		<input id="userPasswordInput" name="password" type="text" class="form-control">
+	          	</div>
+
+	          	<div class="checkbox">
+	          		<label>
+	          			<input name="remember" type="checkbox">Запам'ятати мене
+	          		</label>
+	          	</div>
+
+	          	<div class="form-group">
+	          		<button type="submit" onclick="readUserInput(); return false" class="btn btn-success">Відправити</button>
+	          	</div>
+
+
+			</form>
+		</div>
+	</section>
+
+	<!-- ################################### -->
+	<!-- ##############__FOOTER__########### -->
+	<!-- ################################### -->
+	<footer>
+		<div class="links">
+			<ul>
+				<li><a href="">Карта проїзду</a></li>
+				<li><a href="">Доставка</a></li>
+				<li><a href="">Оплата</a></li>
+				<li><a href="">Контакти</a></li>
+				<li><a href="">Про нас</a></li>
+			</ul>
+		</div>
+		<div class="newsletter-form">
+			<h3>Новини</h3>
+			<input type="text" name="news" value="" placeholder="Введіть електронну адресу для підписки на новини">
+			<button class="subscribe-button">Підписатись</button>
+		</div>
+		<div class="back"><a href="#top"><img src="up.jpg"></a></div>
+		<div class="follow-us">
+			<p>follow us on:</p>
+		</div>
+		<div class="social-links">	
+		  <ul>
+		    <li>
+		      <a href="#" target="_blank">
+		        <img src="facebook_logo.png" alt="facebook">
+		      </a>
+		    </li>
+		    <li>
+		      <a href="https://plus.google.com/u/1/103338554039083147734" target="_blank">
+		        <img src="googleplus_logo.png" alt="google plus">
+		      </a>
+		    </li>
+		    <li>
+		      <a href="https://github.com/javaInSchool/" target="_blank">
+		        <img src="github_logo.svg" alt="github">
+		      </a>
+		    </li>
+		    <li>
+		      <a href="https://www.youtube.com/channel/UCndo_DRCk1-0y5uMcoSFIYQ" target="_blank">
+		        <img src="youtube_logo.png" alt="youtube">
+		      </a>
+		    </li>
+		  </ul>
+
+		</div>
+	</footer>
+	<script type="text/javascript">
+		var data = null;
+		function readUserInput() {
+				data = $('#form').serializeArray().reduce(function(user, item) {
+		    	user[item.name] = item.value;
+		    	return user;
+			}, {});
+			//console.log(data);
+			var APP_ID = 'A90AD439-5B4E-65AA-FF53-E78F7E527700';
+			var API_KEY = '59911D41-9166-ADC2-FFCE-A75F27043200';
+	 
+			Backendless.initApp(APP_ID, API_KEY);
+	 
+			Backendless.Data.of( "Users" ).save(data)
+		    .then( function( obj ) {
+		        console.log( "object saved. objectId " + obj.objectId )
+		    } )
+		    .catch( function( error ) {
+		        console.log( "got error - " + error )
+		    })
+		}
+		
+	</script>
+</body>
+</html>
