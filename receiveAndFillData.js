@@ -20,20 +20,27 @@ function products()
 }
 
 function retrieveData(){
+console.log("Start");
 var APP_ID = 'A90AD439-5B4E-65AA-FF53-E78F7E527700';
 var API_KEY = '59911D41-9166-ADC2-FFCE-A75F27043200';
 Backendless.initApp(APP_ID, API_KEY);
+console.log("initApp");
+var stringValue = "productPrice=790"
+var queryBuilder = Backendless.DataQueryBuilder.create().setWhereClause( stringValue );
 
-Backendless.Data.of( "products" ).find()
+Backendless.Data.of( "products" ).find(queryBuilder)
   .then( function( result ) {
-  	console.log("1. Amount", result[0].productAmount, " is load from database");
-  	console.log("2. Name", result[0].productName, " is load from database");
-  	console.log("3. ImageRef", result[0].productImage, " is load from database");
-  	console.log("4. Price", result[0].productPrice, " is load from database");
+    for (var i =0; i<result.length; i++){
+  	console.log("1. Amount", result[i].productAmount, " is load from database");
+  	console.log("2. Name", result[i].productName, " is load from database");
+  	console.log("3. ImageRef", result[i].productImage, " is load from database");
+  	console.log("4. Price", result[i].productPrice, " is load from database");
+  }
      // every loaded object from the "Cont1act" table is now an individual 
      // instance of Contact in the "result" array
    })
   .catch( function( error ) {
+  	console.log("Error: ",error.statusCode);
     // an error has occurred, the error code can be retrieved with fault.statusCode
    });
 }
